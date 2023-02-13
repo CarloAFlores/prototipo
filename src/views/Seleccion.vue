@@ -210,7 +210,6 @@ export default {
 <style lang="scss" scoped>
 .contendor {
   width: 100%;
-  background-color: aqua;
   position: relative;
   &.contendor::before {
     background-color: rgba(0, 0, 0, 0.5);
@@ -259,7 +258,7 @@ export default {
   }
 }
 .datos {
-  background: goldenrod;
+
   font-family: AvenirLTStd-book;
   .titulo_dos {
     font-weight: bold;
@@ -286,7 +285,7 @@ export default {
   }
 }
 .productos {
-  background: lightseagreen;
+
   display: flex;
   flex-direction: column;
   .categoria{
@@ -295,8 +294,9 @@ export default {
     font-family: AvenirLTStd-book;
   }
   .platillo {
-    border: 1px solid black;
+
     display: flex;
+    box-shadow: 0px 5px #88888893;
     margin-top: 1rem;
     font-family: AvenirLTStd-book;
     .imagen_plati {

@@ -1,7 +1,7 @@
 <template>
-  <section class="saludo">
-    <div class="name"><p>Hola {data}, !Nos encanta que estes aqui!</p></div>
-    <div class="datos">Restaurante: <p class="dato">{data}</p>/ Mesa <p class="dato">{data}</p></div>
+  <section class="header">
+    <div class="header__text"><p>Hola {data}, !Nos encanta que estes aqui!</p></div>
+    <div class="header__text_bold">Restaurante:<p class="text__bold">{data}</p>/ Mesa:<p class="text__bold">{data}</p></div>
   </section>
 </template>
 
@@ -11,23 +11,26 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.saludo{
+<style lang="scss" scoped>
+.header{
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.3rem;
-  margin-top: 6%;
-  font-family: AvenirLTStd-book;
-  .name{
-    text-align: center;
+  .header__text{
+    font-weight: 900;
+    color: var(--negro );
   }
-  .datos{
+  .header__text_bold{
     display: flex;
-    font-size: 1rem;
-    .dato{
-      font-weight: bold;
+    margin-left: -6.5rem;
+    color: var(--negro );
+    font-size: 80%;
+    .text__bold{
+      font-weight: bolder;
     }
   }
+
 }
+
 </style>

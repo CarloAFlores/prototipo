@@ -19,18 +19,24 @@
 
         <div class="iniciar_compra">
             <p>!Completa tu orden en tan solo 1 paso!</p>
-            <div>
-                <img src="" alt="">
+            <div class="num_pedido">
+                <img src="@/assets/circle.svg" alt="">
                 <p>!Elige la <span>guarnicion</span> que deseas y solicita tu pedido</p>
             </div>
-
         </div>
     </section>
 
+
     <section class="seleccion_guarni">
        <div class="ventana_1">
+        <input type="checkbox" name="guarnicion" id="papas">
+        <label for="papas"><img src="@/assets/papas.jpg" alt=""></label>
 
+        <input type="checkbox" name="guarnicion" id="ensalada">
+        <label for="ensalada"><img src="@/assets/muysalada.jpg" alt=""></label>
+        <label for="ensalada"><p>ensalada</p></label>
        </div>
+       
        <div class="ventana_2">
 
        </div>
@@ -62,7 +68,7 @@ export default {
     border-radius: 15px;
 }
 .descripcion{
-    background: goldenrod;
+
     font-family: AvenirLTStd-book;
     .platillo{
         font-weight: bold;
@@ -77,10 +83,15 @@ export default {
         font-size: 70%;
         margin-top: 5%;
     }
+    .iniciar_compra{
+        margin-top: 5%;
+        .num_pedido{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
 
 }
-.seleccion_guarni{
-    background: salmon;
-}
+
 
 </style>
