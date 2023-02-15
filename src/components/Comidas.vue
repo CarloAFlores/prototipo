@@ -32,11 +32,11 @@ export default {
     grid-template-columns: repeat(aut-fit,auto);
     gap: .5rem;
     .items:nth-child(1){
-        background: palevioletred;
+        background: rgb(46, 224, 40);
         grid-column: span 2;
     }
     .items:nth-child(12){
-        background: palevioletred;
+        background: rgb(46, 224, 40);;
         grid-column: span 2;
     }
 }

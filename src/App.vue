@@ -12,10 +12,13 @@ export default {
 :root{
   /* Colores */
   --negro         : #393939;
+  --blanco        : #EEF3EE;
   
   /* Tipografía */
   --tipo-principal   : AvenirLTStd-book;
   --tipo-secundaria  : Verdana;
+  --tipo-tercearia   : AvenirLTStd-black;
+  --tipo-cuarta      : AvenirLTStd-roman;
 }
   
 /* (Opcional) Las adaptamos al modo oscuro */
@@ -79,8 +82,8 @@ html {
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
-h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
-  font-size: inherit;
+h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a  , blockquote , i , b , u , em {
+
   font-weight: inherit;
   font-style: inherit;
   text-decoration: none;
